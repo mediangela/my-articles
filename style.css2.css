@@ -1,0 +1,85 @@
+/* ── Reset and base ── */
+:root {
+    --hcmc-blue: #003366;
+    --hcmc-gold: #c5a059;
+    --light-grey: #f4f4f4;
+    --text-color: #333;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    margin: 0;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Header */
+.main-header {
+    background-color: var(--hcmc-blue);
+    color: white;
+    padding: 30px 0;
+    border-bottom: 4px solid var(--hcmc-gold);
+}
+
+.logo-area h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+}
+
+/* Article Styling */
+.article-title {
+    margin-top: 40px;
+    border-bottom: 2px solid var(--light-grey);
+    padding-bottom: 20px;
+}
+
+.article-title h2 {
+    color: var(--hcmc-blue);
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.lead {
+    font-size: 1.15rem;
+    font-weight: 500;
+}
+
+.highlight-box {
+    background-color: var(--light-grey);
+    border-left: 5px solid var(--hcmc-blue);
+    padding: 20px;
+    margin: 30px 0;
+}
+
+.data-placeholder {
+    height: 200px;
+    background: #eef2f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px dashed var(--hcmc-blue);
+    color: var(--hcmc-blue);
+    margin: 20px 0;
+}
+
+.main-footer {
+    background: var(--light-grey);
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    font-size: 0.9rem;
+}
