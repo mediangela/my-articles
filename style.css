@@ -4,6 +4,7 @@
     --hcmc-gold: #c5a059;
     --light-grey: #f4f4f4;
     --text-color: #333;
+    --colab-orange: #f9ab00;
 }
 
 body {
@@ -26,12 +27,20 @@ body {
     color: white;
     padding: 30px 0;
     border-bottom: 4px solid var(--hcmc-gold);
+    text-align: center;
 }
 
 .logo-area h1 {
     margin: 0;
     font-size: 1.8rem;
     letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.logo-area p {
+    margin: 5px 0 0;
+    font-size: 0.9rem;
+    opacity: 0.8;
 }
 
 /* Article Styling */
@@ -45,17 +54,28 @@ body {
     color: var(--hcmc-blue);
     font-size: 2.2rem;
     margin-bottom: 10px;
+    line-height: 1.2;
 }
 
 .subtitle {
     font-style: italic;
     font-size: 1.2rem;
     color: #666;
+    display: block;
+    margin-top: 10px;
+}
+
+.meta {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #888;
 }
 
 .lead {
     font-size: 1.15rem;
     font-weight: 500;
+    color: #444;
+    margin-bottom: 25px;
 }
 
 .highlight-box {
@@ -63,41 +83,67 @@ body {
     border-left: 5px solid var(--hcmc-blue);
     padding: 20px;
     margin: 30px 0;
+    border-radius: 0 5px 5px 0;
 }
 
-.data-placeholder {
-    height: 200px;
-    background: #eef2f7;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px dashed var(--hcmc-blue);
+.highlight-box h3 {
+    margin-top: 0;
     color: var(--hcmc-blue);
-    margin: 20px 0;
 }
 
+/* ── Chart Section ── */
+.chart-container {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    border: 1px solid var(--light-grey);
+    margin: 40px 0;
+    height: 450px; /* Ύψος για το Canvas */
+    position: relative;
+}
+
+/* Footer */
 .main-footer {
     text-align: center;
-    padding: 40px 0;
-    background-color: #2c3e50; /* Σκούρο επαγγελματικό χρώμα */
+    padding: 50px 0;
+    background-color: #2c3e50;
     color: white;
-    margin-top: 50px;
+    margin-top: 60px;
+}
+
+.main-footer p {
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+    opacity: 0.9;
 }
 
 .colab-link {
     display: inline-block;
-    margin-top: 15px;
-    padding: 10px 20px;
-    background-color: #f9ab00; /* Το πορτοκαλί του Colab */
+    padding: 12px 25px;
+    background-color: var(--colab-orange);
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
-    font-size: 0.9em;
-    transition: transform 0.2s ease;
+    font-size: 0.95em;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 .colab-link:hover {
-    transform: scale(1.05);
+    transform: translateY(-2px);
     background-color: #ffb732;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .article-title h2 {
+        font-size: 1.7rem;
+    }
+    .chart-container {
+        height: 350px;
+        padding: 10px;
+    }
 }
