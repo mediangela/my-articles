@@ -1,5 +1,7 @@
+```css
 /* =========================================================
    DATA STORY — ASFALTOSTROSEIS / DIAVGEIA
+   MINIMAL VERSION
    ========================================================= */
 
 
@@ -7,7 +9,6 @@
 
 :root {
     --navy: #0b1f33;
-    --navy-light: #16344f;
     --blue: #1f5f8b;
     --orange: #e68a32;
 
@@ -17,7 +18,7 @@
 
     --text: #1d2935;
     --muted: #687582;
-    --border: #dfe4e8;
+    --border: #e1e5e8;
 
     --max-width: 1180px;
     --text-width: 760px;
@@ -48,10 +49,11 @@ body {
     color: var(--text);
     background: var(--white);
 
-    line-height: 1.75;
+    line-height: 1.7;
 }
 
 img {
+    display: block;
     max-width: 100%;
     height: auto;
 }
@@ -86,11 +88,11 @@ a {
 /* ---------- TOPBAR ---------- */
 
 .topbar {
-    border-bottom: 1px solid rgba(255,255,255,0.12);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
 .nav-container {
-    min-height: 72px;
+    min-height: 68px;
 
     display: flex;
     align-items: center;
@@ -117,12 +119,12 @@ a {
 
     padding: 3px 7px;
 
-    font-size: 0.72rem;
+    font-size: 0.7rem;
     font-weight: 900;
 }
 
 .brand-name {
-    font-size: 0.85rem;
+    font-size: 0.84rem;
 }
 
 
@@ -130,18 +132,18 @@ a {
 
 nav {
     display: flex;
-    gap: 25px;
+    gap: 22px;
 }
 
 nav a {
-    color: rgba(255,255,255,0.82);
+    color: rgba(255,255,255,0.72);
 
     text-decoration: none;
 
-    font-size: 0.86rem;
+    font-size: 0.82rem;
     font-weight: 600;
 
-    transition: 0.2s ease;
+    transition: color 0.2s ease;
 }
 
 nav a:hover {
@@ -152,12 +154,12 @@ nav a:hover {
 /* ---------- HERO ---------- */
 
 .hero {
-    padding: 105px 0 115px;
+    padding: 100px 0 110px;
 
     background:
         radial-gradient(
             circle at 85% 20%,
-            rgba(31,95,139,0.35),
+            rgba(31,95,139,0.3),
             transparent 35%
         );
 }
@@ -172,16 +174,16 @@ nav a:hover {
 .eyebrow {
     display: inline-flex;
 
-    padding: 7px 12px;
+    padding: 6px 10px;
 
-    border: 1px solid rgba(255,255,255,0.2);
+    border: 1px solid rgba(255,255,255,0.16);
 
-    color: rgba(255,255,255,0.75);
+    color: rgba(255,255,255,0.7);
 
-    font-size: 0.72rem;
+    font-size: 0.68rem;
     font-weight: 800;
 
-    letter-spacing: 1.5px;
+    letter-spacing: 1.4px;
 }
 
 
@@ -190,11 +192,11 @@ nav a:hover {
 .hero h1 {
     max-width: 950px;
 
-    margin: 25px 0;
+    margin: 24px 0;
 
-    font-size: clamp(3rem, 6vw, 5.5rem);
+    font-size: clamp(3rem, 6vw, 5.3rem);
 
-    line-height: 1.02;
+    line-height: 1.03;
 
     letter-spacing: -3px;
 
@@ -209,15 +211,15 @@ nav a:hover {
 /* ---------- HERO SUBTITLE ---------- */
 
 .hero-subtitle {
-    max-width: 760px;
+    max-width: 720px;
 
     margin: 0;
 
-    color: rgba(255,255,255,0.78);
+    color: rgba(255,255,255,0.72);
 
-    font-size: 1.25rem;
+    font-size: 1.15rem;
 
-    line-height: 1.7;
+    line-height: 1.65;
 }
 
 
@@ -227,13 +229,13 @@ nav a:hover {
     display: flex;
     flex-wrap: wrap;
 
-    gap: 12px;
+    gap: 10px;
 
-    margin-top: 35px;
+    margin-top: 30px;
 
-    color: rgba(255,255,255,0.55);
+    color: rgba(255,255,255,0.48);
 
-    font-size: 0.8rem;
+    font-size: 0.76rem;
 }
 
 
@@ -242,7 +244,7 @@ nav a:hover {
    ========================================================= */
 
 .section {
-    padding: 105px 0;
+    padding: 95px 0;
 }
 
 .grey-section {
@@ -250,28 +252,28 @@ nav a:hover {
 }
 
 .section-label {
-    margin-bottom: 18px;
+    margin-bottom: 16px;
 
     color: var(--orange);
 
-    font-size: 0.72rem;
+    font-size: 0.7rem;
 
     font-weight: 900;
 
-    letter-spacing: 1.8px;
+    letter-spacing: 1.7px;
 }
 
 .section-heading {
     max-width: 780px;
 
-    margin-bottom: 45px;
+    margin-bottom: 40px;
 }
 
 .section h2,
 .conclusion h2 {
-    margin: 0 0 20px;
+    margin: 0 0 18px;
 
-    font-size: clamp(2rem, 4vw, 3.4rem);
+    font-size: clamp(2rem, 4vw, 3.3rem);
 
     line-height: 1.12;
 
@@ -283,7 +285,7 @@ nav a:hover {
 .section-heading p {
     color: var(--muted);
 
-    font-size: 1.05rem;
+    font-size: 1rem;
 
     margin: 0;
 }
@@ -294,21 +296,21 @@ nav a:hover {
    ========================================================= */
 
 .intro-section {
-    padding-bottom: 75px;
+    padding-bottom: 70px;
 }
 
 .intro-section .lead {
-    font-size: 1.35rem;
+    font-size: 1.3rem;
 
-    line-height: 1.7;
+    line-height: 1.65;
 
     color: #354555;
 
-    margin-bottom: 30px;
+    margin-bottom: 28px;
 }
 
 .intro-section p {
-    font-size: 1.03rem;
+    font-size: 1rem;
 }
 
 
@@ -321,30 +323,33 @@ nav a:hover {
 
     color: white;
 
-    padding: 55px 0;
+    padding: 48px 0;
 }
 
 .numbers-grid {
     display: grid;
 
-    grid-template-columns:
-        repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
 
-    gap: 1px;
-
-    background: rgba(255,255,255,0.15);
+    gap: 0;
 }
 
 .number-card {
     background: var(--navy);
 
-    padding: 25px 28px;
+    padding: 22px 26px;
+
+    border-right: 1px solid rgba(255,255,255,0.12);
+}
+
+.number-card:last-child {
+    border-right: 0;
 }
 
 .number {
     display: block;
 
-    font-size: 2.4rem;
+    font-size: 2.25rem;
 
     line-height: 1;
 
@@ -356,11 +361,11 @@ nav a:hover {
 .number-label {
     display: block;
 
-    margin-top: 12px;
+    margin-top: 10px;
 
-    color: rgba(255,255,255,0.6);
+    color: rgba(255,255,255,0.55);
 
-    font-size: 0.82rem;
+    font-size: 0.8rem;
 
     line-height: 1.4;
 }
@@ -373,10 +378,9 @@ nav a:hover {
 .feature-grid {
     display: grid;
 
-    grid-template-columns:
-        0.85fr 1.15fr;
+    grid-template-columns: 0.85fr 1.15fr;
 
-    gap: 55px;
+    gap: 50px;
 
     align-items: start;
 }
@@ -390,9 +394,9 @@ nav a:hover {
 
     align-items: center;
 
-    gap: 20px;
+    gap: 18px;
 
-    padding: 22px 0;
+    padding: 20px 0;
 
     border-bottom: 1px solid var(--border);
 }
@@ -400,7 +404,7 @@ nav a:hover {
 .rank {
     color: var(--orange);
 
-    font-size: 0.8rem;
+    font-size: 0.75rem;
 
     font-weight: 900;
 }
@@ -408,13 +412,13 @@ nav a:hover {
 .ranking-item strong {
     display: block;
 
-    font-size: 1rem;
+    font-size: 0.98rem;
 }
 
 .ranking-item small {
     color: var(--muted);
 
-    font-size: 0.82rem;
+    font-size: 0.8rem;
 }
 
 
@@ -423,25 +427,23 @@ nav a:hover {
 .map-placeholder {
     background: var(--light);
 
-    padding: 12px;
+    padding: 10px;
 
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
 .map-placeholder img {
     width: 100%;
 
-    display: block;
-
-    border-radius: 6px;
+    border-radius: 5px;
 }
 
 .image-note {
-    padding: 12px 5px 4px;
+    padding: 10px 4px 3px;
 
     color: var(--muted);
 
-    font-size: 0.75rem;
+    font-size: 0.72rem;
 }
 
 
@@ -452,40 +454,35 @@ nav a:hover {
 .chart-container {
     background: white;
 
-    padding: 25px;
+    padding: 22px;
 
-    margin: 45px 0;
+    margin: 40px 0;
 
     border: 1px solid var(--border);
 
-    border-radius: 10px;
-
-    box-shadow:
-        0 15px 45px rgba(15, 35, 50, 0.06);
+    border-radius: 8px;
 }
 
 .chart-container img {
-    display: block;
-
     width: 100%;
 
-    border-radius: 5px;
+    border-radius: 4px;
 }
 
 .large-chart {
-    padding: 30px;
+    padding: 25px;
 }
 
 .chart-caption {
-    margin: 20px 0 0;
+    margin: 18px 0 0;
 
-    padding-top: 15px;
+    padding-top: 13px;
 
     border-top: 1px solid var(--border);
 
     color: var(--muted);
 
-    font-size: 0.78rem;
+    font-size: 0.76rem;
 
     line-height: 1.5;
 }
@@ -498,23 +495,23 @@ nav a:hover {
 .highlight-box {
     display: grid;
 
-    grid-template-columns: 110px 1fr;
+    grid-template-columns: 100px 1fr;
 
-    gap: 30px;
+    gap: 25px;
 
-    padding: 35px;
+    padding: 30px;
 
-    margin-top: 55px;
+    margin-top: 45px;
 
     background: var(--navy);
 
     color: white;
 
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
 .highlight-icon {
-    font-size: 2.2rem;
+    font-size: 2rem;
 
     font-weight: 900;
 
@@ -522,78 +519,24 @@ nav a:hover {
 }
 
 .highlight-box h3 {
-    margin: 0 0 10px;
+    margin: 0 0 8px;
 
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 
 .highlight-box p {
-    margin: 8px 0;
+    margin: 7px 0;
 
-    color: rgba(255,255,255,0.72);
+    color: rgba(255,255,255,0.7);
 }
 
 
 /* =========================================================
-   CATEGORY CARDS
+   PROJECT TYPES
    ========================================================= */
 
-.category-grid {
-    display: grid;
-
-    grid-template-columns:
-        repeat(4, 1fr);
-
-    gap: 15px;
-
-    margin-top: 45px;
-}
-
-.category-card {
-    padding: 28px;
-
-    background: var(--light);
-
-    border: 1px solid var(--border);
-
-    border-radius: 8px;
-
-    transition:
-        transform 0.2s ease,
-        box-shadow 0.2s ease;
-}
-
-.category-card:hover {
-    transform: translateY(-4px);
-
-    box-shadow:
-        0 12px 30px rgba(0,0,0,0.08);
-}
-
-.category-number {
-    color: var(--orange);
-
-    font-size: 0.75rem;
-
-    font-weight: 900;
-}
-
-.category-card h3 {
-    margin: 18px 0 10px;
-
-    font-size: 1.05rem;
-
-    line-height: 1.3;
-}
-
-.category-card p {
-    margin: 0;
-
-    color: var(--muted);
-
-    font-size: 0.85rem;
-
-    line-height: 1.5;
+#categories .chart-container {
+    margin-top: 35px;
 }
 
 
@@ -610,10 +553,9 @@ nav a:hover {
 .money-section {
     display: grid;
 
-    grid-template-columns:
-        1.3fr 0.7fr;
+    grid-template-columns: 1.3fr 0.7fr;
 
-    gap: 80px;
+    gap: 70px;
 
     align-items: center;
 }
@@ -623,7 +565,7 @@ nav a:hover {
 }
 
 .dark-section p {
-    color: rgba(255,255,255,0.7);
+    color: rgba(255,255,255,0.68);
 }
 
 .light-label {
@@ -631,22 +573,21 @@ nav a:hover {
 }
 
 .money-note {
-    padding: 30px;
+    padding: 26px;
 
-    border:
-        1px solid rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.14);
 
-    border-radius: 8px;
+    border-radius: 7px;
 }
 
 .money-note span {
     color: var(--orange);
 
-    font-size: 0.7rem;
+    font-size: 0.68rem;
 
     font-weight: 900;
 
-    letter-spacing: 1.5px;
+    letter-spacing: 1.4px;
 }
 
 .money-note p {
@@ -659,24 +600,23 @@ nav a:hover {
    ========================================================= */
 
 .methodology-section {
-    background: #fff;
+    background: white;
 }
 
 .method-grid {
     display: grid;
 
-    grid-template-columns:
-        repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
 
-    gap: 15px;
+    gap: 12px;
 
-    margin-top: 50px;
+    margin-top: 45px;
 }
 
 .method-card {
-    padding: 30px;
+    padding: 26px;
 
-    border-top: 3px solid var(--navy);
+    border-top: 2px solid var(--navy);
 
     background: var(--light);
 }
@@ -684,23 +624,23 @@ nav a:hover {
 .method-step {
     color: var(--orange);
 
-    font-size: 0.75rem;
+    font-size: 0.72rem;
 
     font-weight: 900;
 }
 
 .method-card h3 {
-    margin: 20px 0 10px;
+    margin: 17px 0 9px;
 
-    font-size: 1.1rem;
+    font-size: 1.05rem;
 }
 
 .method-card p {
     color: var(--muted);
 
-    font-size: 0.88rem;
+    font-size: 0.85rem;
 
-    line-height: 1.6;
+    line-height: 1.55;
 }
 
 
@@ -713,7 +653,7 @@ nav a:hover {
 }
 
 .limitations-section p {
-    font-size: 1rem;
+    font-size: 0.98rem;
 }
 
 .limitation-warning {
@@ -721,15 +661,15 @@ nav a:hover {
 
     gap: 12px;
 
-    margin-top: 35px;
+    margin-top: 30px;
 
-    padding: 20px;
+    padding: 18px;
 
-    border-left: 4px solid var(--orange);
+    border-left: 3px solid var(--orange);
 
     background: white;
 
-    font-size: 0.88rem;
+    font-size: 0.86rem;
 }
 
 .limitation-warning strong {
@@ -742,18 +682,13 @@ nav a:hover {
    ========================================================= */
 
 .conclusion {
-    padding: 110px 0;
+    padding: 100px 0;
 
-    background:
-        linear-gradient(
-            135deg,
-            #eef3f6,
-            #ffffff
-        );
+    background: #f3f6f8;
 }
 
 .conclusion p {
-    font-size: 1.05rem;
+    font-size: 1rem;
 }
 
 
@@ -770,24 +705,23 @@ nav a:hover {
 .footer-grid {
     display: grid;
 
-    grid-template-columns:
-        1.5fr 1fr 1fr;
+    grid-template-columns: 1.5fr 1fr 1fr;
 
-    gap: 50px;
+    gap: 45px;
 
-    padding-top: 70px;
+    padding-top: 60px;
 
-    padding-bottom: 60px;
+    padding-bottom: 50px;
 }
 
 .footer-brand {
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 }
 
 .main-footer p {
-    color: rgba(255,255,255,0.55);
+    color: rgba(255,255,255,0.5);
 
-    font-size: 0.85rem;
+    font-size: 0.82rem;
 }
 
 .footer-links {
@@ -797,13 +731,13 @@ nav a:hover {
 
     align-items: flex-start;
 
-    gap: 8px;
+    gap: 7px;
 }
 
 .footer-links h3 {
-    margin: 0 0 10px;
+    margin: 0 0 9px;
 
-    font-size: 0.8rem;
+    font-size: 0.76rem;
 
     color: var(--orange);
 
@@ -813,13 +747,13 @@ nav a:hover {
 }
 
 .footer-links a {
-    color: rgba(255,255,255,0.7);
+    color: rgba(255,255,255,0.65);
 
     text-decoration: none;
 
-    font-size: 0.85rem;
+    font-size: 0.82rem;
 
-    transition: 0.2s;
+    transition: color 0.2s ease;
 }
 
 .footer-links a:hover {
@@ -830,10 +764,9 @@ nav a:hover {
 /* ---------- FOOTER BOTTOM ---------- */
 
 .footer-bottom {
-    border-top:
-        1px solid rgba(255,255,255,0.1);
+    border-top: 1px solid rgba(255,255,255,0.08);
 
-    padding: 20px 0;
+    padding: 18px 0;
 }
 
 .footer-bottom .container {
@@ -841,9 +774,9 @@ nav a:hover {
 
     justify-content: space-between;
 
-    color: rgba(255,255,255,0.35);
+    color: rgba(255,255,255,0.32);
 
-    font-size: 0.72rem;
+    font-size: 0.7rem;
 }
 
 
@@ -858,8 +791,11 @@ nav a:hover {
     }
 
     .numbers-grid {
-        grid-template-columns:
-            repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .number-card:nth-child(2) {
+        border-right: 0;
     }
 
     .feature-grid,
@@ -867,14 +803,8 @@ nav a:hover {
         grid-template-columns: 1fr;
     }
 
-    .category-grid {
-        grid-template-columns:
-            repeat(2, 1fr);
-    }
-
     .method-grid {
-        grid-template-columns:
-            repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .footer-grid {
@@ -904,7 +834,7 @@ nav a:hover {
     }
 
     .section {
-        padding: 75px 0;
+        padding: 70px 0;
     }
 
     .numbers-grid {
@@ -912,44 +842,51 @@ nav a:hover {
     }
 
     .number {
-        font-size: 1.8rem;
+        font-size: 1.75rem;
     }
 
     .number-card {
-        padding: 20px 15px;
+        padding: 18px 14px;
+    }
+
+    .number-card:nth-child(odd) {
+        border-right: 1px solid rgba(255,255,255,0.12);
+    }
+
+    .number-card:nth-child(even) {
+        border-right: 0;
     }
 
     .feature-grid {
-        gap: 30px;
+        gap: 28px;
     }
 
     .highlight-box {
         grid-template-columns: 1fr;
 
-        gap: 5px;
+        gap: 4px;
 
-        padding: 25px;
-    }
-
-    .category-grid,
-    .method-grid {
-        grid-template-columns: 1fr;
+        padding: 24px;
     }
 
     .chart-container {
         padding: 12px;
 
-        margin: 30px 0;
+        margin: 28px 0;
     }
 
     .large-chart {
         padding: 12px;
     }
 
+    .method-grid {
+        grid-template-columns: 1fr;
+    }
+
     .footer-grid {
         grid-template-columns: 1fr;
 
-        gap: 35px;
+        gap: 30px;
     }
 
     .footer-bottom .container {
@@ -962,3 +899,4 @@ nav a:hover {
         flex-direction: column;
     }
 }
+```
