@@ -1,3 +1,4 @@
+```html
 <!doctype html>
 <html lang="el">
 <head>
@@ -14,8 +15,6 @@
 
 <body>
 
-<!-- ================= HEADER ================= -->
-
 <header class="main-header">
 
     <div class="topbar">
@@ -30,16 +29,15 @@
                 <a href="#story">Η έρευνα</a>
                 <a href="#geography">Γεωγραφία</a>
                 <a href="#timeline">Χρόνος</a>
-                <a href="#categories">Κατηγορίες</a>
+                <a href="#categories">Έργα</a>
+                <a href="#money">Δαπάνες</a>
                 <a href="#methodology">Μεθοδολογία</a>
             </nav>
 
         </div>
     </div>
 
-
     <div class="hero">
-
         <div class="container hero-content">
 
             <div class="eyebrow">
@@ -65,17 +63,14 @@
             </div>
 
         </div>
-
     </div>
 
 </header>
 
 
-<!-- ================= MAIN ================= -->
-
 <main>
 
-    <!-- INTRO -->
+    <!-- 01 · Η ΕΡΕΥΝΑ -->
 
     <section id="story" class="section intro-section">
 
@@ -113,30 +108,70 @@
         </div>
 
     </section>
-    <!-- GEOGRAPHY -->
+
+
+    <!-- NUMBERS -->
+
+    <section class="numbers-section">
+
+        <div class="container numbers-grid">
+
+            <div class="number-card">
+                <span class="number">48K+</span>
+                <span class="number-label">
+                    αποφάσεις στο dataset
+                </span>
+            </div>
+
+            <div class="number-card">
+                <span class="number">2016–26</span>
+                <span class="number-label">
+                    περίοδος ανάλυσης
+                </span>
+            </div>
+
+            <div class="number-card">
+                <span class="number">2.396</span>
+                <span class="number-label">
+                    αποφάσεις Περιφέρειας Πελοποννήσου
+                </span>
+            </div>
+
+            <div class="number-card">
+                <span class="number">3.905</span>
+                <span class="number-label">
+                    αποφάσεις το 2018
+                </span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- 02 · ΓΕΩΓΡΑΦΙΑ -->
 
     <section id="geography" class="section">
 
         <div class="container">
 
-            <div class="section-label">02 · Η ΓΕΩΓΡΑΦΙΑ ΤΩΝ ΕΡΓΩΝ</div>
+            <div class="section-label">
+                02 · Η ΓΕΩΓΡΑΦΙΑ ΤΩΝ ΕΡΓΩΝ
+            </div>
 
             <div class="section-heading">
 
-                <div>
-                    <h2>
-                        Ποιοι φορείς πρωταγωνιστούν;
-                    </h2>
+                <h2>
+                    Ποιοι φορείς πρωταγωνιστούν;
+                </h2>
 
-                    <p>
-                        Η δραστηριότητα δεν κατανέμεται ομοιόμορφα.
-                        Ορισμένες περιφέρειες και δήμοι εμφανίζονται
-                        επανειλημμένα στις αποφάσεις που εντοπίστηκαν.
-                    </p>
-                </div>
+                <p>
+                    Η δραστηριότητα δεν κατανέμεται ομοιόμορφα.
+                    Ορισμένες περιφέρειες και δήμοι εμφανίζονται
+                    επανειλημμένα στις αποφάσεις που εντοπίστηκαν.
+                </p>
 
             </div>
-
 
             <div class="feature-grid">
 
@@ -184,12 +219,12 @@
 
                 </div>
 
-
                 <div class="map-placeholder">
 
                     <img
                         src="images/map.png"
-                        alt="Χάρτης γεωγραφικής κατανομής των φορέων">
+                        alt="Χάρτης γεωγραφικής κατανομής των φορέων"
+                        loading="lazy">
 
                     <div class="image-note">
                         Γεωγραφική απεικόνιση των κορυφαίων φορέων
@@ -204,13 +239,15 @@
     </section>
 
 
-    <!-- TIMELINE -->
+    <!-- 03 · ΧΡΟΝΟΣ -->
 
     <section id="timeline" class="section grey-section">
 
         <div class="container">
 
-            <div class="section-label">03 · Η ΕΞΕΛΙΞΗ ΣΤΟΝ ΧΡΟΝΟ</div>
+            <div class="section-label">
+                03 · Η ΕΞΕΛΙΞΗ ΣΤΟΝ ΧΡΟΝΟ
+            </div>
 
             <div class="section-heading">
 
@@ -226,12 +263,12 @@
 
             </div>
 
-
             <div class="chart-container large-chart">
 
                 <img
                     src="images/decisions-by-year.png"
-                    alt="Αριθμός αποφάσεων ανά έτος, 2016–2026">
+                    alt="Αριθμός αποφάσεων ανά έτος, 2016–2026"
+                    loading="lazy">
 
                 <p class="chart-caption">
                     Αριθμός αποφάσεων που εντοπίστηκαν ανά έτος.
@@ -239,7 +276,6 @@
                 </p>
 
             </div>
-
 
             <div class="highlight-box">
 
@@ -253,7 +289,8 @@
 
                     <p>
                         Το 2018 καταγράφεται η υψηλότερη τιμή της
-                        εξεταζόμενης περιόδου, με <strong>3.905 αποφάσεις</strong>.
+                        εξεταζόμενης περιόδου, με
+                        <strong>3.905 αποφάσεις</strong>.
                         Η χρονιά προηγείται των αυτοδιοικητικών εκλογών
                         του 2019 και συμπίπτει με την περίοδο εφαρμογής
                         και χρηματοδοτικών παρεμβάσεων για έργα υποδομής.
@@ -274,45 +311,48 @@
     </section>
 
 
-    ```html
-<!-- PROJECT TYPES -->
-<section class="section" id="categories">
-  <div class="section-label">04 · ΤΙ ΕΙΔΟΥΣ ΕΡΓΑ;</div>
+    <!-- 04 · ΕΙΔΗ ΕΡΓΩΝ -->
 
-  <h2>Η ασφαλτόστρωση κυριαρχεί</h2>
+    <section id="categories" class="section">
 
-  <p>
-    Η θεματική κατηγοριοποίηση των τίτλων δείχνει ποια είδη
-    παρεμβάσεων εμφανίζονται συχνότερα στις αποφάσεις.
-  </p>
+        <div class="container">
 
-  <figure>
-    <img
-      src="images/categories.png"
-      alt="Κατηγορίες έργων οδοποιίας"
-      loading="lazy"
-    >
-    <figcaption>
-      Θεματική κατηγοριοποίηση των τίτλων των αποφάσεων.
-      Μία απόφαση μπορεί να αντιστοιχεί σε περισσότερες από μία κατηγορίες.
-    </figcaption>
-  </figure>
-</section>
-```
-
-                    </p>
-                </div>
-
+            <div class="section-label">
+                04 · ΤΙ ΕΙΔΟΥΣ ΕΡΓΑ;
             </div>
+
+            <h2>
+                Η ασφαλτόστρωση κυριαρχεί
+            </h2>
+
+            <p>
+                Η θεματική κατηγοριοποίηση των τίτλων δείχνει ποια είδη
+                παρεμβάσεων εμφανίζονται συχνότερα στις αποφάσεις.
+            </p>
+
+            <figure class="chart-container">
+
+                <img
+                    src="images/categories.png"
+                    alt="Κατηγορίες έργων οδοποιίας"
+                    loading="lazy">
+
+                <figcaption class="chart-caption">
+                    Θεματική κατηγοριοποίηση των τίτλων των αποφάσεων.
+                    Μία απόφαση μπορεί να αντιστοιχεί σε περισσότερες
+                    από μία κατηγορίες.
+                </figcaption>
+
+            </figure>
 
         </div>
 
     </section>
 
 
-    <!-- DATA / MONEY -->
+    <!-- 05 · ΔΗΜΟΣΙΕΣ ΔΑΠΑΝΕΣ -->
 
-    <section class="section dark-section">
+    <section id="money" class="section dark-section">
 
         <div class="container money-section">
 
@@ -337,7 +377,6 @@
 
             </div>
 
-
             <div class="money-note">
 
                 <span>DATA CHECK</span>
@@ -355,78 +394,60 @@
     </section>
 
 
-    <!-- METHODOLOGY -->
+    <!-- 06 · ΜΕΘΟΔΟΛΟΓΙΑ -->
 
     <section id="methodology" class="section methodology-section">
 
         <div class="container">
 
-            <div class="section-label">06 · ΜΕΘΟΔΟΛΟΓΙΑ</div>
+            <div class="section-label">
+                06 · ΜΕΘΟΔΟΛΟΓΙΑ
+            </div>
 
             <h2>
                 Πώς έγινε η έρευνα;
             </h2>
 
-
             <div class="method-grid">
 
                 <div class="method-card">
-
                     <span class="method-step">01</span>
-
                     <h3>Συλλογή</h3>
-
                     <p>
                         Αναζητήθηκαν αποφάσεις στη Διαύγεια
                         με λέξεις-κλειδιά σχετικές με
                         ασφαλτοστρώσεις και οδοποιία.
                     </p>
-
                 </div>
 
-
                 <div class="method-card">
-
                     <span class="method-step">02</span>
-
                     <h3>Καθαρισμός</h3>
-
                     <p>
                         Τα δεδομένα οργανώθηκαν σε dataframe,
                         ελέγχθηκαν και δημιουργήθηκαν μεταβλητές
                         για έτος, μήνα, φορέα και κατηγορία.
                     </p>
-
                 </div>
 
-
                 <div class="method-card">
-
                     <span class="method-step">03</span>
-
                     <h3>PDF</h3>
-
                     <p>
                         Κατεβάστηκαν και αναλύθηκαν PDF αποφάσεων
                         ώστε να εξαχθεί το κείμενο και, όπου ήταν
                         δυνατό, το οικονομικό ποσό.
                     </p>
-
                 </div>
 
-
                 <div class="method-card">
-
                     <span class="method-step">04</span>
-
                     <h3>Ανάλυση</h3>
-
                     <p>
                         Οι αποφάσεις ομαδοποιήθηκαν ανά έτος,
                         φορέα και θεματική κατηγορία και
                         παρουσιάστηκαν οπτικά.
                     </p>
-
                 </div>
 
             </div>
@@ -436,13 +457,15 @@
     </section>
 
 
-    <!-- LIMITATIONS -->
+    <!-- 07 · ΠΕΡΙΟΡΙΣΜΟΙ -->
 
     <section class="section limitations-section">
 
         <div class="container narrow">
 
-            <div class="section-label">07 · ΠΕΡΙΟΡΙΣΜΟΙ</div>
+            <div class="section-label">
+                07 · ΠΕΡΙΟΡΙΣΜΟΙ
+            </div>
 
             <h2>
                 Τι πρέπει να έχουμε υπόψη
@@ -481,13 +504,15 @@
     </section>
 
 
-    <!-- CONCLUSION -->
+    <!-- 08 · ΣΥΜΠΕΡΑΣΜΑ -->
 
     <section class="conclusion">
 
         <div class="container narrow">
 
-            <div class="section-label">08 · ΣΥΜΠΕΡΑΣΜΑ</div>
+            <div class="section-label">
+                08 · ΣΥΜΠΕΡΑΣΜΑ
+            </div>
 
             <h2>
                 Οι δρόμοι μέσα από τους αριθμούς
@@ -514,8 +539,6 @@
 </main>
 
 
-<!-- ================= FOOTER ================= -->
-
 <footer class="main-footer">
 
     <div class="container footer-grid">
@@ -533,7 +556,6 @@
 
         </div>
 
-
         <div class="footer-links">
 
             <h3>Η έρευνα</h3>
@@ -545,12 +567,14 @@
                 Google Colab →
             </a>
 
-            <a href="https://github.com/" target="_blank" rel="noopener">
+            <a
+                href="https://github.com/"
+                target="_blank"
+                rel="noopener">
                 GitHub →
             </a>
 
         </div>
-
 
         <div class="footer-links">
 
@@ -567,7 +591,6 @@
         </div>
 
     </div>
-
 
     <div class="footer-bottom">
 
@@ -587,6 +610,7 @@
 
 </footer>
 
-
 </body>
 </html>
+```
+
