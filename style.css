@@ -315,63 +315,6 @@ nav a:hover {
 
 
 /* =========================================================
-   NUMBERS
-   ========================================================= */
-
-.numbers-section {
-    background: var(--navy);
-
-    color: white;
-
-    padding: 48px 0;
-}
-
-.numbers-grid {
-    display: grid;
-
-    grid-template-columns: repeat(4, 1fr);
-
-    gap: 0;
-}
-
-.number-card {
-    background: var(--navy);
-
-    padding: 22px 26px;
-
-    border-right: 1px solid rgba(255,255,255,0.12);
-}
-
-.number-card:last-child {
-    border-right: 0;
-}
-
-.number {
-    display: block;
-
-    font-size: 2.25rem;
-
-    line-height: 1;
-
-    font-weight: 800;
-
-    letter-spacing: -1px;
-}
-
-.number-label {
-    display: block;
-
-    margin-top: 10px;
-
-    color: rgba(255,255,255,0.55);
-
-    font-size: 0.8rem;
-
-    line-height: 1.4;
-}
-
-
-/* =========================================================
    GEOGRAPHY / RANKING
    ========================================================= */
 
