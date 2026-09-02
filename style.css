@@ -1,16 +1,17 @@
 /* =========================================================
-   PURE MINIMAL MONOCHROME EDITORIAL
-   Black, White & Subtle Greys
+   CONTEMPORARY DATA JOURNALISM DESIGN SYSTEM
+   Modern, Clean, High-End Minimal (Slate & Accent Orange)
    ========================================================= */
 
 :root {
-    --black: #111111;
-    --dark-grey: #2b2b2b;
-    --mid-grey: #767676;
-    --light-grey: #f4f4f4;
-    --border-color: #e5e5e5;
-    --white: #ffffff;
-    --content-max-width: 680px;
+    --bg-main: #f8fafc;
+    --card-bg: #ffffff;
+    --text-primary: #0f172a;
+    --text-muted: #475569;
+    --accent: #f97316; /* Vibrant modern orange */
+    --border-subtle: #e2e8f0;
+    --header-bg: #0b0f19;
+    --max-w: 740px;
 }
 
 * {
@@ -20,155 +21,186 @@
 }
 
 body {
-    background-color: var(--white);
-    color: var(--black);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    font-size: 1.08rem;
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-size: 1.1rem;
     line-height: 1.8;
     -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
 }
 
 .container {
-    width: 90%;
-    max-width: var(--content-max-width);
+    width: min(100% - 40px, var(--max-w));
     margin: 0 auto;
 }
 
-/* ---------- HEADER ---------- */
-.site-header {
-    border-bottom: 1px solid var(--border-color);
-    padding: 24px 0;
-    background: var(--white);
+/* ---------- HERO HEADER (DARK MODERN) ---------- */
+.hero-header {
+    background-color: var(--header-bg);
+    color: #ffffff;
+    padding: 90px 0 80px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-.header-inner {
-    display: flex;
-    justify-content: space-between;
+.meta-badge {
+    display: inline-flex;
     align-items: center;
-}
-
-.brand {
-    font-size: 0.85rem;
-    font-weight: 900;
-    letter-spacing: 2px;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 6px 14px;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
     text-transform: uppercase;
-}
-
-.header-meta {
-    font-size: 0.8rem;
-    color: var(--mid-grey);
-}
-
-/* ---------- ARTICLE HEADINGS ---------- */
-.article-container {
-    padding-top: 80px;
-    padding-bottom: 90px;
-}
-
-.article-header {
-    margin-bottom: 48px;
-    border-bottom: 1px solid var(--border-color);
-    padding-bottom: 40px;
-}
-
-.article-title {
-    font-size: clamp(2rem, 4vw, 2.75rem);
-    font-weight: 800;
-    line-height: 1.25;
-    letter-spacing: -1px;
-    color: var(--black);
+    color: #cbd5e1;
     margin-bottom: 24px;
 }
 
-.article-intro {
+.dot {
+    width: 6px;
+    height: 6px;
+    background-color: var(--accent);
+    border-radius: 50%;
+}
+
+.hero-header h1 {
+    font-size: clamp(2.2rem, 4.5vw, 3.2rem);
+    font-weight: 800;
+    line-height: 1.15;
+    letter-spacing: -1.5px;
+    color: #ffffff;
+    margin-bottom: 24px;
+}
+
+.hero-lead {
     font-size: 1.2rem;
-    line-height: 1.65;
-    color: var(--dark-grey);
+    line-height: 1.6;
+    color: #94a3b8;
     font-weight: 400;
 }
 
-/* ---------- ARTICLE BODY ---------- */
-.article-body p {
-    margin-bottom: 24px;
-    color: #222;
+/* ---------- MAIN CONTENT ---------- */
+.main-content {
+    padding: 60px 0 100px;
 }
 
-.section-title {
-    font-size: 1.4rem;
-    font-weight: 800;
-    letter-spacing: -0.5px;
-    margin: 44px 0 20px;
-    text-transform: uppercase;
-    font-size: 0.95rem;
-    letter-spacing: 1.5px;
+.article-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
-.subsection-title {
-    font-size: 1.35rem;
+.content-block h2,
+.content-block h3 {
+    font-size: 1.6rem;
     font-weight: 700;
     letter-spacing: -0.5px;
-    margin: 40px 0 16px;
+    color: var(--text-primary);
+    margin-bottom: 18px;
+    margin-top: 20px;
 }
 
-/* ---------- PLACEHOLDERS (ΔΙΑΓΡΑΜΜΑ & ΠΙΝΑΚΑΣ) ---------- */
-.data-block {
-    margin: 36px 0;
-    border: 1px solid var(--black);
-    padding: 28px 24px;
-    background: var(--white);
-    position: relative;
-}
-
-.block-label {
-    display: inline-block;
-    background: var(--black);
-    color: var(--white);
-    font-size: 0.65rem;
-    font-weight: 800;
+.content-block h2 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
     letter-spacing: 1.5px;
-    padding: 2px 8px;
+    color: var(--text-muted);
+}
+
+p {
+    color: var(--text-muted);
+    margin-bottom: 24px;
+}
+
+/* ---------- VISUAL CARDS (ΔΙΑΓΡΑΜΜΑ & ΠΙΝΑΚΑΣ) ---------- */
+.visual-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-subtle);
+    border-radius: 12px;
+    padding: 32px;
+    box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.03);
+    margin: 10px 0;
+}
+
+.card-tag {
+    display: inline-block;
+    background: #e2e8f0;
+    color: #334155;
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    padding: 3px 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+}
+
+.card-inner p {
+    color: #94a3b8;
+    font-style: italic;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* ---------- MODERN CALLOUT (DISCLAIMER) ---------- */
+.modern-callout {
+    background: #ffffff;
+    border: 1px solid var(--border-subtle);
+    border-left: 4px solid var(--accent);
+    border-radius: 0 12px 12px 0;
+    padding: 32px;
+    box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.03);
+    margin: 10px 0;
+}
+
+.callout-title {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--text-primary);
+    margin-bottom: 12px;
+}
+
+.modern-callout p {
+    margin: 0;
+    font-size: 1.02rem;
+}
+
+/* ---------- LIMITATIONS BOX ---------- */
+.limitations-box {
+    background: #f1f5f9;
+    border-radius: 12px;
+    padding: 32px;
+    border: 1px solid var(--border-subtle);
+    margin-top: 10px;
+}
+
+.limitations-box h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-primary);
     margin-bottom: 14px;
 }
 
-.placeholder-text {
-    font-size: 0.95rem;
-    color: var(--mid-grey);
-    font-style: italic;
-    margin: 0 !important;
-}
-
-/* ---------- DISCLAIMER CARD ---------- */
-.disclaimer-card {
-    background: var(--light-grey);
-    border-left: 2px solid var(--black);
-    padding: 24px 26px;
-    margin: 36px 0;
-}
-
-.disclaimer-card h4 {
+.limitations-box p {
     font-size: 1rem;
-    font-weight: 800;
-    margin-bottom: 10px;
-    letter-spacing: -0.2px;
+    margin-bottom: 16px;
 }
 
-.disclaimer-card p {
-    font-size: 0.96rem;
-    line-height: 1.7;
-    margin: 0 !important;
-    color: var(--dark-grey);
+.limitations-box p:last-child {
+    margin-bottom: 0;
 }
 
-/* ---------- FOOTER ---------- */
-.site-footer {
-    border-top: 1px solid var(--border-color);
-    padding: 36px 0;
-    font-size: 0.85rem;
-    color: var(--mid-grey);
+/* ---------- MODERN FOOTER ---------- */
+.modern-footer {
+    background-color: var(--header-bg);
+    color: #94a3b8;
+    padding: 40px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    font-size: 0.9rem;
 }
 
-.footer-inner {
+.footer-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -176,32 +208,31 @@ body {
 
 .footer-links {
     display: flex;
-    gap: 10px;
+    gap: 20px;
 }
 
 .footer-links a {
-    color: var(--black);
+    color: #ffffff;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 500;
+    transition: color 0.2s ease;
 }
 
 .footer-links a:hover {
-    text-decoration: underline;
+    color: var(--accent);
 }
 
-/* ---------- MOBILE ---------- */
-@media (max-width: 600px) {
-    .article-container {
-        padding-top: 45px;
-        padding-bottom: 55px;
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 640px) {
+    .hero-header {
+        padding: 60px 0;
     }
-    .header-inner,
-    .footer-inner {
+    .footer-content {
         flex-direction: column;
+        gap: 16px;
         align-items: flex-start;
-        gap: 8px;
     }
-    .data-block {
-        padding: 20px 16px;
+    .visual-card, .modern-callout, .limitations-box {
+        padding: 20px;
     }
 }
