@@ -93,15 +93,6 @@ a {
     font-size: 0.85rem;
 }
 
-.brand-mark {
-    background: var(--white);
-    color: var(--black);
-    padding: 3px 7px;
-    font-size: 0.7rem;
-    font-weight: 900;
-    border-radius: 2px;
-}
-
 nav {
     display: flex;
     gap: 24px;
@@ -136,31 +127,6 @@ nav a:hover {
     max-width: 900px;
 }
 
-.hero-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    background: rgba(255, 255, 255, 0.12);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    padding: 6px 14px;
-    border-radius: 20px;
-    font-size: 0.75rem;
-    font-weight: 700;
-    letter-spacing: 1.5px;
-    color: #e5e5e5;
-    margin-bottom: 24px;
-}
-
-.badge-dot {
-    width: 7px;
-    height: 7px;
-    background-color: #ffffff;
-    border-radius: 50%;
-    display: inline-block;
-}
-
 .hero h1 {
     margin: 0 0 24px;
     font-size: clamp(2.4rem, 5vw, 4.2rem);
@@ -185,19 +151,8 @@ nav a:hover {
     color: #f3f4f6;
     font-size: 1.15rem;
     line-height: 1.7;
-    margin-bottom: 28px;
+    margin-bottom: 0;
     text-shadow: 0 1px 6px rgba(0, 0, 0, 0.7);
-}
-
-.hero-meta {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-    margin-top: 25px;
-    color: #9ca3af;
-    font-size: 0.8rem;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
 }
 
 /* =========================================================
@@ -337,18 +292,6 @@ p {
     position: relative;
 }
 
-.embed-tag {
-    display: inline-block;
-    background: var(--black);
-    color: var(--white);
-    font-size: 0.65rem;
-    font-weight: 800;
-    letter-spacing: 1.5px;
-    padding: 3px 8px;
-    border-radius: 2px;
-    margin-bottom: 16px;
-}
-
 .chart-container img {
     display: block;
     width: 100%;
@@ -467,15 +410,6 @@ p {
     padding-bottom: 50px;
 }
 
-.footer-brand {
-    margin-bottom: 16px;
-}
-
-.main-footer p {
-    color: rgba(255, 255, 255, 0.5);
-    font-size: 0.82rem;
-}
-
 .footer-links {
     display: flex;
     flex-direction: column;
@@ -509,9 +443,9 @@ p {
 
 .footer-bottom .container {
     display: flex;
-    justify-content: space-between;
-    color: rgba(255, 255, 255, 0.35);
-    font-size: 0.72rem;
+    justify-content: flex-end;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.8rem;
 }
 
 /* =========================================================
@@ -571,8 +505,8 @@ p {
     }
 
     .footer-bottom .container {
-        flex-direction: column;
-        gap: 6px;
+        justify-content: center;
+        text-align: center;
     }
 
     .limitation-warning {
