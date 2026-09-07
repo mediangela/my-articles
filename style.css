@@ -114,7 +114,7 @@ nav a:hover {
     position: relative;
     padding: 110px 0 115px;
     background-image: 
-        linear-gradient(rgba(10, 14, 18, 0.78), rgba(10, 14, 18, 0.90)),
+        linear-gradient(rgba(10, 14, 18, 0.82), rgba(10, 14, 18, 0.92)),
         url('Screenshot%202026-09-02%20205823.png');
     background-size: cover;
     background-position: center 60%;
@@ -127,25 +127,27 @@ nav a:hover {
     max-width: 900px;
 }
 
-/* Minimalist Editorial Title with Times New Roman (Not Bold) */
+/* Απλός, καθαρός τίτλος Times New Roman χωρίς Bold και χωρίς σκιές */
 .hero h1 {
     margin: 0 0 24px;
-    font-family: "Times New Roman", Times, Baskerville, Georgia, serif;
-    font-weight: 400;
-    font-size: clamp(2.1rem, 4vw, 3.4rem);
+    font-family: "Times New Roman", Times, Georgia, serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: clamp(2rem, 3.8vw, 3.2rem);
     line-height: 1.25;
-    letter-spacing: 0;
-    color: var(--white);
-    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+    letter-spacing: normal;
+    color: #ffffff;
+    text-shadow: none;
+    -webkit-font-smoothing: subpixel-antialiased;
 }
 
 .hero-subtitle {
     max-width: 760px;
-    color: #f3f4f6;
-    font-size: 1.15rem;
+    color: #e5e7eb;
+    font-size: 1.12rem;
     line-height: 1.7;
     margin-bottom: 0;
-    text-shadow: 0 1px 6px rgba(0, 0, 0, 0.7);
+    font-weight: 300;
 }
 
 /* =========================================================
@@ -454,7 +456,7 @@ p {
     }
 
     .hero h1 {
-        font-size: 1.9rem;
+        font-size: 1.8rem;
         line-height: 1.3;
     }
 
